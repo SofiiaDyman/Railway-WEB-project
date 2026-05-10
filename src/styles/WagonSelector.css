@@ -1,0 +1,64 @@
+.wagon-selector {
+  margin-bottom: 2rem;
+}
+
+.wagon-selector__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.wagon-selector__list {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.wagon-selector__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.75rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  min-width: 90px;
+}
+
+.wagon-selector__btn:hover {
+  border-color: #1a56db;
+  transform: translateY(-2px);
+}
+
+.wagon-selector__btn--active {
+  border-color: #1a56db;
+  background: #eff6ff;
+}
+
+.wagon-selector__num {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.wagon-selector__type {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.wagon-selector__price {
+  font-size: 0.8rem;
+  color: #1a56db;
+  font-weight: 600;
+}
+
+.wagon-selector__seats {
+  font-size: 0.72rem;
+  color: #22c55e;
+  font-weight: 600;
+}

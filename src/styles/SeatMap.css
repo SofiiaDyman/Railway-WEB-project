@@ -1,0 +1,93 @@
+
+.seat-map {
+  margin-bottom: 2rem;
+}
+
+.seat-map__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+/* Легенда */
+.seat-map__legend {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.seat-map__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.seat-map__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.seat-map__dot--free     { background: #22c55e; }
+.seat-map__dot--selected { background: #3b82f6; }
+.seat-map__dot--booked   { background: #ef4444; }
+
+/* Сітка місць */
+.seat-map__grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.5rem;
+  max-width: 540px;
+}
+
+/* Одне місце */
+.seat-map__seat {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s;
+  color: #fff;
+}
+
+.seat-map__seat:hover:not(:disabled) {
+  transform: scale(1.15);
+}
+
+.seat-map__seat--free {
+  background: #22c55e;
+}
+
+.seat-map__seat--selected {
+  background: #3b82f6;
+}
+
+.seat-map__seat--booked {
+  background: #ef4444;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Інфо про обрані */
+.seat-map__selected-info {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.seat-map__selected-info strong {
+  color: #3b82f6;
+}
+
+@media (max-width: 480px) {
+  .seat-map__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

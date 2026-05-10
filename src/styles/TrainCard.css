@@ -1,5 +1,3 @@
-/* src/components/TrainCard.css */
-
 .train-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -53,6 +51,14 @@
 }
 .train-card__type--пасажирський {
   background: #475569;
+}
+
+.train-card__price {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 /* --- Route --- */
@@ -160,4 +166,26 @@
   .train-card {
     padding: 1rem 1.1rem;
   }
+}
+
+/* додати в кінець TrainCard.css */
+
+.train-card__book-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #1a56db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.train-card__book-btn:hover {
+  background: #1544b8;
+  transform: translateY(-1px);
 }
