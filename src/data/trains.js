@@ -1,3 +1,5 @@
+// src/data/trains.js
+
 const trains = [
   {
     id: 1,
@@ -8,8 +10,33 @@ const trains = [
     arrival: "2025-06-15T14:45:00",
     duration: "6г 25хв",
     type: "Швидкісний",
-    wagons: 12,
-    availableSeats: 48,
+    price: 980,
+    wagons: [
+      {
+        id: 1,
+        number: 1,
+        type: "Купе",
+        totalSeats: 36,
+        bookedSeats: [3, 7, 12, 15, 20],
+        price: 1100,
+      },
+      {
+        id: 2,
+        number: 2,
+        type: "Плацкарт",
+        totalSeats: 54,
+        bookedSeats: [1, 5, 9, 18, 27, 33],
+        price: 780,
+      },
+      {
+        id: 3,
+        number: 3,
+        type: "Купе",
+        totalSeats: 36,
+        bookedSeats: [2, 4, 6],
+        price: 1100,
+      },
+    ],
   },
   {
     id: 2,
@@ -20,8 +47,25 @@ const trains = [
     arrival: "2025-06-16T09:40:00",
     duration: "12г 25хв",
     type: "Нічний",
-    wagons: 16,
-    availableSeats: 8,
+    price: 1190,
+    wagons: [
+      {
+        id: 1,
+        number: 1,
+        type: "Люкс",
+        totalSeats: 18,
+        bookedSeats: [1, 2, 5, 6, 9, 10, 13, 14, 17, 18],
+        price: 1550,
+      },
+      {
+        id: 2,
+        number: 2,
+        type: "Купе",
+        totalSeats: 36,
+        bookedSeats: [4, 8, 16, 24],
+        price: 1190,
+      },
+    ],
   },
   {
     id: 3,
@@ -32,8 +76,25 @@ const trains = [
     arrival: "2025-06-16T11:30:00",
     duration: "5г 30хв",
     type: "Інтерсіті+",
-    wagons: 8,
-    availableSeats: 22,
+    price: 860,
+    wagons: [
+      {
+        id: 1,
+        number: 1,
+        type: "Бізнес",
+        totalSeats: 28,
+        bookedSeats: [3, 6, 11, 19, 22],
+        price: 1250,
+      },
+      {
+        id: 2,
+        number: 2,
+        type: "Економ",
+        totalSeats: 54,
+        bookedSeats: [2, 7, 15, 30, 45],
+        price: 860,
+      },
+    ],
   },
   {
     id: 4,
@@ -44,8 +105,25 @@ const trains = [
     arrival: "2025-06-16T17:50:00",
     duration: "4г 40хв",
     type: "Пасажирський",
-    wagons: 14,
-    availableSeats: 95,
+    price: 640,
+    wagons: [
+      {
+        id: 1,
+        number: 1,
+        type: "Плацкарт",
+        totalSeats: 54,
+        bookedSeats: [1, 3, 5, 7, 9],
+        price: 720,
+      },
+      {
+        id: 2,
+        number: 2,
+        type: "Плацкарт",
+        totalSeats: 54,
+        bookedSeats: [2, 4, 6, 8, 10],
+        price: 720,
+      },
+    ],
   },
   {
     id: 5,
@@ -56,8 +134,25 @@ const trains = [
     arrival: "2025-06-18T08:10:00",
     duration: "13г 40хв",
     type: "Нічний",
-    wagons: 18,
-    availableSeats: 67,
+    price: 1340,
+    wagons: [
+      {
+        id: 1,
+        number: 1,
+        type: "Купе",
+        totalSeats: 36,
+        bookedSeats: [5, 10, 15],
+        price: 1200,
+      },
+      {
+        id: 2,
+        number: 2,
+        type: "Люкс",
+        totalSeats: 18,
+        bookedSeats: [1, 3, 7],
+        price: 1600,
+      },
+    ],
   },
   {
     id: 6,
@@ -68,8 +163,25 @@ const trains = [
     arrival: "2025-06-17T16:30:00",
     duration: "7г 30хв",
     type: "Інтерсіті",
-    wagons: 10,
-    availableSeats: 3,
+    price: 1090,
+    wagons: [
+      {
+        id: 1,
+        number: 1,
+        type: "Бізнес",
+        totalSeats: 28,
+        bookedSeats: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 25, 26, 27, 28],
+        price: 1300,
+      },
+      {
+        id: 2,
+        number: 2,
+        type: "Економ",
+        totalSeats: 54,
+        bookedSeats: [10, 20, 30, 40, 50],
+        price: 900,
+      },
+    ],
   },
 ];
 
