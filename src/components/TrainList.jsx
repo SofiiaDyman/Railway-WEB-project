@@ -1,9 +1,7 @@
-// src/components/TrainList.jsx
-
 import TrainCard from "./TrainCard";
 import "../styles/TrainList.css";
 
-function TrainList({ trains }) {
+function TrainList({ trains, onBook }) {
   if (trains.length === 0) {
     return (
       <div className="train-list__empty">
@@ -17,7 +15,7 @@ function TrainList({ trains }) {
     <ul className="train-list">
       {trains.map((train) => (
         <li key={train.id}>
-          <TrainCard train={train} />
+          <TrainCard train={train} onBook={onBook} />
         </li>
       ))}
     </ul>

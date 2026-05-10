@@ -1,12 +1,14 @@
 // src/pages/Home.jsx
 
 import { useState, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import TrainList from "../components/TrainList";
 import trains from "../data/trains";
 import "../styles/Home.css";
 
 function Home() {
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   const filteredTrains = useMemo(() => {
     const q = query.toLowerCase().trim();
@@ -42,7 +44,10 @@ function Home() {
           Знайдено рейсів: <strong>{filteredTrains.length}</strong>
         </p>
 
-        <TrainList trains={filteredTrains} />
+        <TrainList
+          trains={filteredTrains}
+          onBook={(trainId) => navigate(`/booking/${trainId}`)}
+        />
       </main>
     </div>
   );
